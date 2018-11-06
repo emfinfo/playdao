@@ -5,7 +5,7 @@
   <!-- the basics -->
   <groupId>ch.emf.info</groupId>
   <artifactId>playdao</artifactId>
-  <version>1.0.1</version>
+  <version>1.0.0</version>
   <packaging>jar</packaging>
 
   <!-- application, project and maven properties -->
