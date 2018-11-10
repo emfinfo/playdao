@@ -12,21 +12,21 @@ import scala.concurrent.ExecutionContextExecutor;
  * @author Jean-Claude Stritt
  */
 public class DatabaseExecutionContext implements ExecutionContextExecutor {
-  private final ExecutionContext executionContext;
+  private final ExecutionContext dbCtx;
   private static final String NAME = "database.dispatcher";
 
   @Inject
   public DatabaseExecutionContext(ActorSystem actorSystem) {
-    this.executionContext = actorSystem.dispatchers().lookup(NAME);
+    this.dbCtx = actorSystem.dispatchers().lookup(NAME);
   }
 
   @Override
   public void execute(Runnable command) {
-    executionContext.execute(command);
+    dbCtx.execute(command);
   }
 
   @Override
   public void reportFailure(Throwable cause) {
-    executionContext.reportFailure(cause);
+    dbCtx.reportFailure(cause);
   }
 }
