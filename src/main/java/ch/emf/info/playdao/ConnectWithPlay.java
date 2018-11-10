@@ -10,7 +10,7 @@ import play.mvc.Http.Context;
 import play.mvc.Http.Session;
 
 /**
- * Connect with Play framework.
+ * Classe de connexion qui fournit l'entity-manager de Play framework.
  *
  * @author jcstritt
  */
@@ -46,11 +46,11 @@ public class ConnectWithPlay implements Connectable {
     return t;
   }
 
-  @Override
-  public boolean isConnected() {
-    return (jpaApi.em() != null) && jpaApi.em().isOpen();
-  }
-
+  /**
+   * Retourne l'objet EntityManager géré par Play framework.
+   *
+   * @return l'objet en question
+   */
   @Override
   public EntityManager getEm() {
     EntityManager em = jpaApi.em();
@@ -66,6 +66,11 @@ public class ConnectWithPlay implements Connectable {
     return em;
   }
 
+  /**
+   * Retourne un objet Transaction créé pour l'entity-manager de Play.
+   *
+   * @return l'objet en question
+   */
   @Override
   public Transaction getTr() {
     Transaction transaction = null;
@@ -75,6 +80,21 @@ public class ConnectWithPlay implements Connectable {
     return transaction;
   }
 
+  /**
+   * Détermine si l'objet EntityManager de Play est différent de null
+   * et actuellement ouvert sur une base de données.
+   *
+   * @return true si une connexion existe via l'entity-manager de Play
+   */
+  @Override
+  public boolean isConnected() {
+    return (jpaApi.em() != null) && jpaApi.em().isOpen();
+  }
+
+  /**
+   * Méthode de déconnexion. Dans Play, il n'y pas de déconnexion à effectuer,
+   * car cela est géré automatiquement par son pool de connexions.
+   */
   @Override
   public void disconnect() {
   }

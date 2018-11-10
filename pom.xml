@@ -14,9 +14,8 @@
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
-
-    <!--<play2.version>2.6.20</play2.version>-->
-    <scala.version>2.12.4</scala.version>
+    <play2.version>2.6.20</play2.version>
+    <scala.version>2.12.7</scala.version>
   </properties>
 
   <!-- additional repository -->
@@ -53,7 +52,7 @@
     <dependency>
       <groupId>com.typesafe.play</groupId>
       <artifactId>play-java-jpa_2.12</artifactId>
-      <version>2.6.20</version>
+      <version>${play2.version}</version>
     </dependency>
 
     <!-- dependencies for tests -->
@@ -66,7 +65,6 @@
 
   </dependencies>
 
-  <!-- MAVEN plugins ici https://maven.apache.org/plugins/ -->
   <!-- build settings -->
   <build>
     <plugins>
@@ -109,33 +107,33 @@
           </fileSets>
         </configuration>
       </plugin>
-    </plugins>
-  </build>
 
-  <reporting>
-    <plugins>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-site-plugin</artifactId>
         <version>3.7.1</version>
       </plugin>
+
       <plugin>
         <artifactId>maven-project-info-reports-plugin</artifactId>
-        <version>2.9</version> <!-- avant 24.10.2018 version 2.9 -->
+        <version>3.0.0</version>   <!-- avant 24.10.2018 version 2.9 -->
         <configuration>
-          <dependencyLocationsEnabled>false</dependencyLocationsEnabled>
+          <dependencyLocationsEnabled>true</dependencyLocationsEnabled>
         </configuration>
       </plugin>
 
-      <!-- contrôlé 24.10.2018 -->
+    </plugins>
+  </build>
+
+  <!-- create javadoc -->
+  <reporting>
+    <plugins>
       <plugin>
         <artifactId>maven-javadoc-plugin</artifactId>
-        <version>3.0.1</version> <!-- avant 24.10.2018 version 3.0.0-M1 -->
+        <version>3.0.1</version>  <!-- 2.9 pour umlgraph 5.6.6 -->
       </plugin>
-
     </plugins>
   </reporting>
-
 
   <!-- more project information -->
   <name>PlayDao</name>

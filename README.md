@@ -6,7 +6,7 @@ You can download and open this project in NetBeans 8.x or 9.x. It's a Java 8 mav
 Project documentation here :<br>
     http://jcstritt.emf-informatique.ch/doc/playdao<br>
 
-New in release 1.0.1 (8.11.2018) :
+New in release 1.0.1 (10.11.2018) :
 * Add support for multi-tenant requests with entity-manager
 
 New in release 1.0.0 (6.11.2018) :
