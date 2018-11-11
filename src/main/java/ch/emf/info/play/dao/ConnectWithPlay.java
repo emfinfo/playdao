@@ -1,4 +1,4 @@
-package ch.emf.info.playdao;
+package ch.emf.info.play.dao;
 
 import ch.emf.dao.conn.Connectable;
 import ch.emf.dao.helpers.Logger;

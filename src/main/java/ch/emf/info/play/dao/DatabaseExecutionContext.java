@@ -1,4 +1,4 @@
-package ch.emf.info.playdao;
+package ch.emf.info.play.dao;
 
 import akka.actor.ActorSystem;
 import javax.inject.Inject;
