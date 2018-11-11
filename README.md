@@ -6,7 +6,7 @@ You can download and open this project in NetBeans 8.x or 9.x. It's a Java 8 mav
 Project documentation here :<br>
     http://jcstritt.emf-informatique.ch/doc/playdao<br>
 
-New in release 1.0.1 (11.11.2018) :
+New in release 1.0.1 (12.11.2018) :
 * Project name change from PlayDao to DaoPlay !
 * Package ch.emf.info.playdao has been renamed ch.emf.dao.play)
 * Add support for multi-tenant requests with entity-manager
