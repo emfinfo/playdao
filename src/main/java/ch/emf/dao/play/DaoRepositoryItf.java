@@ -1,4 +1,4 @@
-package ch.emf.info.play.dao;
+package ch.emf.dao.play;
 
 import ch.emf.dao.JpaDaoAPI;
 import com.google.inject.ImplementedBy;

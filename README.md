@@ -8,7 +8,7 @@ Project documentation here :<br>
 
 New in release 1.0.1 (11.11.2018) :
 * Add support for multi-tenant requests with entity-manager
-* Package ch.emf.info.playdao has been renamed ch.emf.info.play.dao)
+* Package ch.emf.info.playdao has been renamed ch.emf.dao.play)
 
 New in release 1.0.0 (6.11.2018) :
 * First commit
