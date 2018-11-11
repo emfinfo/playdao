@@ -4,7 +4,7 @@
 
   <!-- the basics -->
   <groupId>ch.emf.info</groupId>
-  <artifactId>playdao</artifactId>
+  <artifactId>daoplay</artifactId>
   <version>1.0.1</version>
   <packaging>jar</packaging>
 
@@ -136,7 +136,7 @@
   </reporting>
 
   <!-- more project information -->
-  <name>PlayDao</name>
+  <name>DaoPlay</name>
   <description>A small layer to use Play framework with DaoLayer 6 and Guice</description>
   <licenses>
     <license>
