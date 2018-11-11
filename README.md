@@ -8,7 +8,7 @@ Project documentation here :<br>
 
 New in release 1.0.1 (12.11.2018) :
 * Project name change from PlayDao to DaoPlay !
-* Package ch.emf.info.playdao has been renamed ch.emf.dao.play)
+* Package ch.emf.info.playdao has been renamed ch.emf.dao.play
 * Add support for multi-tenant requests with entity-manager
 
 New in release 1.0.0 (6.11.2018) :
