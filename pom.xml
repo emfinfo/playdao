@@ -8,6 +8,17 @@
   <version>1.0.1</version>
   <packaging>jar</packaging>
 
+  <name>DaoPlay</name>
+  <description>A small layer to use Play framework with DaoLayer 6 and Guice</description>
+  <url>https://github.com/emfinfo/playdao</url>
+  <licenses>
+    <license>
+      <name>MIT License</name>
+      <url>http://www.opensource.org/licenses/MIT</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+
   <!-- application, project and maven properties -->
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -32,12 +43,6 @@
 
     <!-- dependencies for compile (and run) -->
     <dependency>
-      <groupId>ch.emf.info</groupId>
-      <artifactId>daolayer</artifactId>
-      <version>6.0.1</version>
-    </dependency>
-
-    <dependency>
       <groupId>org.scala-lang</groupId>
       <artifactId>scala-library</artifactId>
       <version>${scala.version}</version>
@@ -53,6 +58,12 @@
       <groupId>com.typesafe.play</groupId>
       <artifactId>play-java-jpa_2.12</artifactId>
       <version>${play2.version}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>ch.emf.info</groupId>
+      <artifactId>daolayer</artifactId>
+      <version>6.0.1</version>
     </dependency>
 
     <!-- dependencies for tests -->
@@ -135,18 +146,7 @@
     </plugins>
   </reporting>
 
-  <!-- more project information -->
-  <name>DaoPlay</name>
-  <description>A small layer to use Play framework with DaoLayer 6 and Guice</description>
-  <licenses>
-    <license>
-      <name>MIT License</name>
-      <url>http://www.opensource.org/licenses/MIT</url>
-      <distribution>repo</distribution>
-    </license>
-  </licenses>
-
-  <url>https://github.com/emfinfo/playdao</url>
+  <!-- developers -->
   <developers>
     <developer>
       <id>STT</id>
